@@ -10,6 +10,7 @@ This [z-push docker image](https://hub.docker.com/r/17halbe/z-push/) is designed
 - `IMAP_OPTIONS`: imap options
 - `SMTP_SERVER`: smtp server address/ip
 - `SMTP_PORT`: smtp port
+- `USE_X_FORWARDED_FOR_HEADER`: true/false
 - `DEBUG`: [0/1] disables/enables verbose logging.
 
 ## Device Setup
