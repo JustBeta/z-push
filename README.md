@@ -7,6 +7,7 @@ This [z-push docker image](https://hub.docker.com/r/17halbe/z-push/) is designed
 - `TIMEZONE`: in the format of `Europe/Zurich`
 - `IMAP_SERVER`: your imap server address/ip
 - `IMAP_PORT`: imap port
+- `IMAP_OPTIONS`: imap options
 - `SMTP_SERVER`: smtp server address/ip
 - `SMTP_PORT`: smtp port
 - `DEBUG`: [0/1] disables/enables verbose logging.
