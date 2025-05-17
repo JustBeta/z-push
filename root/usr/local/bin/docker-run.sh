@@ -10,6 +10,7 @@ cp /etc/supervisord.conf.dist /etc/supervisord.conf
 
 sed -e "s/define('BACKEND_PROVIDER', '')/define('BACKEND_PROVIDER', 'BackendIMAP')/" \
     -e "s|define('STATE_DIR', '/var/lib/z-push/')|define('STATE_DIR', '/state/')|" \
+    -e "s|define('USE_X_FORWARDED_FOR_HEADER', false)|define('USE_X_FORWARDED_FOR_HEADER', "$USE_X_FORWARDED_FOR_HEADER")|"
     -e "s|define('TIMEZONE', '')|define('TIMEZONE', '"$TIMEZONE"')|" /opt/zpush/config.php.dist > /opt/zpush/config.php
 #    -e "s|define('LOGFILEDIR', '/var/log/z-push/')|define('LOGFILEDIR', '/data/logs/')|" \
 
